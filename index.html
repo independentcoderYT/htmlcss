@@ -4,51 +4,33 @@
     <title>Independent Coder Website</title>
   </head>
   <body>
-    <h1>Placeholder Examples</h1>
-
+    <h1>Dropdown Menu Example</h1>
     <form action="#" method="post">
-      <!-- Name input -->
-      <label for="name">Name:</label><br />
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Please enter your name"
-      />
+      <!-- Standard Dropdown -->
+      <label for="country">Choose your country:</label><br />
+      <select id="country" name="country">
+        <option value="" disabled selected>Select your country</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+      </select>
+
       <br /><br />
 
-      <!-- Email input -->
-      <label for="email">Email:</label><br />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="you@example.com"
-      />
+      <!-- Multi-select Dropdown -->
+      <label for="skills"
+        >Select your skills (hold Ctrl/Cmd to select multiple):</label
+      ><br />
+      <select id="skills" name="skills" multiple size="4">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+      </select>
+
       <br /><br />
 
-      <!-- Password input -->
-      <label for="password">Password:</label><br />
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Create a strong password"
-      />
-      <br /><br />
-
-      <!-- Textarea -->
-      <label for="message">Message:</label><br />
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        cols="40"
-        placeholder="Write your message here..."
-      ></textarea>
-      <br /><br />
-
-      <!-- Submit -->
       <input type="submit" value="Submit" />
     </form>
   </body>
