@@ -4,35 +4,38 @@
     <title>Independent Coder Website</title>
   </head>
   <body>
-    <h1>Basic HTML Form</h1>
+    <h1>Choose Your Options</h1>
 
-    <form method="POST" action="success.html">
-      <!-- Text input -->
-      <label for="username">Name:</label>
-      <input type="text" id="username" name="username" />
-      <br /><br />
+    <form action="#" method="post">
+      <!-- Radio Buttons Section -->
+      <fieldset>
+        <legend>Select your gender:</legend>
+        <label
+          ><input type="radio" name="gender" value="male" checked /> Male</label
+        ><br />
+        <label><input type="radio" name="gender" value="female" /> Female</label
+        ><br />
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+      </fieldset>
 
-      <!-- Email input -->
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" />
-      <br /><br />
+      <br />
 
-      <!-- Password input -->
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" />
-      <br /><br />
+      <!-- Checkboxes Section -->
+      <fieldset>
+        <legend>Select your skills:</legend>
+        <label><input type="checkbox" name="skills" value="html" /> HTML</label
+        ><br />
+        <label><input type="checkbox" name="skills" value="css" /> CSS</label
+        ><br />
+        <label
+          ><input type="checkbox" name="skills" value="javascript" />
+          JavaScript</label
+        >
+      </fieldset>
 
-      <!-- Number input -->
-      <label for="age">Age:</label>
-      <input type="number" id="age" name="age" />
-      <br /><br />
+      <br />
 
-      <!-- Textarea -->
-      <label for="message">Message:</label><br />
-      <textarea id="message" name="message" rows="5" cols="40"></textarea>
-      <br /><br />
-
-      <!-- Submit Button -->
+      <!-- Submit -->
       <input type="submit" value="Submit" />
     </form>
   </body>
