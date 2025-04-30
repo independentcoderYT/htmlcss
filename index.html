@@ -4,38 +4,36 @@
     <title>Independent Coder Website</title>
   </head>
   <body>
-    <h1>HTML Text Formatting Tags</h1>
+    <h1>Basic HTML Form</h1>
 
-    <div>
-      <b>This is bold text using the &lt;b&gt; tag</b>
-    </div>
+    <form method="" action="">
+      <!-- Text input -->
+      <label for="username">Name:</label>
+      <input type="text" id="username" name="username" />
+      <br /><br />
 
-    <div>
-      <i>This is italic text using the &lt;i&gt; tag</i>
-    </div>
+      <!-- Email input -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br /><br />
 
-    <div>
-      <u>This is underlined text using the &lt;u&gt; tag</u>
-    </div>
+      <!-- Password input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br /><br />
 
-    <div>
-      <small>This is smaller text using the &lt;small&gt; tag</small>
-    </div>
+      <!-- Number input -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" />
+      <br /><br />
 
-    <div>
-      <mark>This is highlighted text using the &lt;mark&gt; tag</mark>
-    </div>
+      <!-- Textarea -->
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" cols="40"></textarea>
+      <br /><br />
 
-    <div>
-      <del>This text is deleted using the &lt;del&gt; tag</del>
-    </div>
-
-    <div>
-      <ins>This text is inserted using the &lt;ins&gt; tag</ins>
-    </div>
-
-    <div>Water chemical formula: H<sub>2</sub>O (using &lt;sub&gt; tag)</div>
-
-    <div>Einstein's formula: E = mc<sup>2</sup> (using &lt;sup&gt; tag)</div>
+      <!-- Submit Button -->
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 </html>
